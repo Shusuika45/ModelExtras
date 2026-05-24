@@ -310,7 +310,7 @@ void Lights::Init()
 	Events::processScriptsEvent += []()
 	{
 		size_t timestamp = CTimer::m_snTimeInMilliseconds;
-		if ((timestamp - delay) > 500)
+		if ((timestamp - delay) > 333)
 		{
 			delay = timestamp;
 			indicatorsDelay = !indicatorsDelay;
